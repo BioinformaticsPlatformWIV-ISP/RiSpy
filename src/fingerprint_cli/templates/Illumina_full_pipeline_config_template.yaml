@@ -1,0 +1,94 @@
+paths:
+  output_dir:
+  fastq_dir:
+  reference:
+  chain_file:
+  chromosome_mapping:
+  barcodes:
+  ref_vcf:
+  centromere:
+
+parameters:
+  fastp:
+    window_size:
+    quality:
+    min_len:
+  breadth_of_coverage:
+    depth_cutoff:
+  deep_variant:
+    BIN_VERSION:
+  variant_filtering:
+    min_QUAL:
+    min_DP:
+
+resources:
+  fastqc_raw:
+    threads:
+    memory:
+  trim_reads:
+    threads:
+    memory:
+  fastqc_trimmed:
+    threads:
+    memory:
+  consensus_fasta_index:
+    threads:
+    memory:
+  alignment:
+    threads:
+    memory:
+  qualimap:
+    threads:
+    memory:
+  samtools_depth:
+    threads:
+    memory:
+  calculate_mean_and_median_depth:
+    threads: 1
+    memory:
+  breadth_of_coverage:
+    threads: 1
+    memory:
+  count_bam:
+    threads:
+    memory:
+  fold_80:
+    threads: 1
+    memory:
+  deep_variant:
+    threads:
+    memory:
+  variant_filtering:
+    threads: 1
+    memory:
+  unique_SNPs:
+    threads: 1
+    memory:
+  bed_maker:
+    threads: 1
+    memory:
+  liftover:
+    threads: 1
+    memory:
+  chromosome_name_conversion:
+    threads: 1
+    memory:
+  filter_fingerprints:
+    threads: 1
+    memory:
+  validation_fingerprints_alt:
+    threads: 1
+    memory:
+  validation_fingerprints_ref:
+    threads: 1
+    memory:
+  barcodes_positions_new_ref:
+    threads: 1
+    memory:
+  chromosome_arms:
+    threads: 1
+    memory:
+  report_html:
+    threads: 1
+    memory: 1000
+

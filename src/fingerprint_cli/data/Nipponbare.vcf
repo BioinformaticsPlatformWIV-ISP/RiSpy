@@ -1,0 +1,36 @@
+##fileformat=VCFv4.2
+##FILTER=<ID=PASS,Description="All filters passed">
+##FILTER=<ID=RefCall,Description="Genotyping model thinks this site is reference.">
+##FILTER=<ID=LowQual,Description="Confidence in this variant being real is below calling threshold.">
+##FILTER=<ID=NoCall,Description="Site has depth=0 resulting in no call.">
+##INFO=<ID=END,Number=1,Type=Integer,Description="End position (for use with symbolic alleles)">
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
+##FORMAT=<ID=GQ,Number=1,Type=Integer,Description="Conditional genotype quality">
+##FORMAT=<ID=DP,Number=1,Type=Integer,Description="Read depth">
+##FORMAT=<ID=MIN_DP,Number=1,Type=Integer,Description="Minimum DP observed within the GVCF block.">
+##FORMAT=<ID=AD,Number=R,Type=Integer,Description="Read depth for each allele">
+##FORMAT=<ID=VAF,Number=A,Type=Float,Description="Variant allele fractions.">
+##FORMAT=<ID=PL,Number=G,Type=Integer,Description="Phred-scaled genotype likelihoods rounded to the closest integer">
+##FORMAT=<ID=MED_DP,Number=1,Type=Integer,Description="Median DP observed within the GVCF block rounded to the nearest integer.">
+##FORMAT=<ID=MID,Number=1,Type=String,Description="Identifies which model called this variant.">
+##DeepVariant_version=1.8.0
+##contig=<ID=NC_089035.1,length=43929697>
+##contig=<ID=NC_089036.1,length=36447916>
+##contig=<ID=NC_089037.1,length=37399924>
+##contig=<ID=NC_089038.1,length=36078568>
+##contig=<ID=NC_089039.1,length=30400764>
+##contig=<ID=NC_089040.1,length=32122276>
+##contig=<ID=NC_089041.1,length=29936421>
+##contig=<ID=NC_089042.1,length=28605474>
+##contig=<ID=NC_089043.1,length=27474823>
+##contig=<ID=NC_089044.1,length=23931887>
+##contig=<ID=NC_089045.1,length=31111469>
+##contig=<ID=NC_089046.1,length=28271460>
+##contig=<ID=NC_011033.1,length=490520>
+##contig=<ID=NC_001320.1,length=134525>
+##contig=<ID=NC_001751.1,length=2135>
+##bcftools_isecVersion=1.21+htslib-1.21
+##bcftools_isecCommand=isec -c none -p . -n~ S1_No_Filtering.vcf.gz S2_No_Filtering.vcf.gz; Date=Wed Jul 16 13:33:52 2025
+##bcftools_viewVersion=1.21+htslib-1.21
+##bcftools_viewCommand=view -R /scratch/amzolfaghari/final_pipeline/Paper_Fingerprint_Kitaake/Fingerprint_Detection/New/Kitaake/Illumina/reference_allele_fingerprints.bed -O v -o /scratch/amzolfaghari/final_pipeline/Paper_Fingerprint_Kitaake/Fingerprint_Detection/New/Kitaake/Illumina/reference_fingerprints_variants.vcf /scratch/amzolfaghari/final_pipeline/Paper_Fingerprint_Kitaake/Fingerprint_Detection/New/Kitaake/Illumina/non_strict_filtered.vcf.gz; Date=Sat Aug  9 19:01:08 2025
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	default

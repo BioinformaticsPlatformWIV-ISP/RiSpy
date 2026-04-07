@@ -1,0 +1,24 @@
+name: fingerprint_environment
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - fastqc=0.11.7
+  - trimmomatic=0.39
+  - bwa=0.7.17
+  - samtools=1.21
+  - qualimap=2.2.2
+  - bcftools=1.21
+  - ucsc-liftover=469
+  - bedtools=2.31.0
+  - minimap2=2.28
+  - transanno=0.4.5
+  - fastp=1.0.1
+  - nanoplot=1.46.1
+  - seqkit=2.3.1
+  - chopper=0.8.0
+
+
+
+

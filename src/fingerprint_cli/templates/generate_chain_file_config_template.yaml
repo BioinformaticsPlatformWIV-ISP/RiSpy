@@ -1,0 +1,15 @@
+paths:
+  output_dir: 
+  old_ref:
+  new_ref:
+
+resources:
+  cleaning_fasta:
+    threads: 1
+    memory:
+  making_PAF:
+    threads:
+    memory:
+  making_chain_file:
+    threads: 1
+    memory:

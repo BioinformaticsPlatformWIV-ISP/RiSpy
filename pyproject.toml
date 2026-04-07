@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=80.9.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "Fingerprint-Detection-Pipeline"
+version = "1.0.0"
+description = "Detection of 2-SNV barcodes (fingerprint) from WGS data"
+readme = "README.md"
+authors = [{ name="Amin Zolfaghari", email="bioit@sciensano.be" }]
+license = { text = "GNU" }
+requires-python = ">=3.10.12"
+dependencies = [
+    "setuptools>=80.9.0",
+    "wheel>=0.37.1",
+    "typer>=0.17.4",
+    "PyYAML>=6.0.2",
+    "snakemake>=7.32.4",
+    "pulp==2.7.0",
+    "openpyxl>=3.1.5",
+    "bio>=1.8.0",
+    "pandas>=2.3.1",
+    "pysam>=0.22.1"
+
+]
+
+[project.scripts]
+fingerprint = "fingerprint_cli.cli:app"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"fingerprint_cli" = [
+    "snakefiles/*.smk",
+    "templates/*.yaml",
+    "data/*"
+]
+

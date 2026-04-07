@@ -1,0 +1,41 @@
+paths:
+  output_dir:
+  chain_file:
+  chromosome_mapping:
+  barcodes:
+  ref_vcf:
+  centromere:
+  bam:
+  query_vcf: 
+
+resources:
+  unique_SNPs:
+    threads: 1
+    memory:
+  bed_maker:
+    threads: 1
+    memory:
+  liftover:
+    threads: 1
+    memory:
+  chromosome_name_conversion:
+    threads: 1
+    memory:
+  filter_fingerprints:
+    threads: 1
+    memory:
+  validation_fingerprints_alt:
+    threads: 1
+    memory:
+  validation_fingerprints_ref:
+    threads: 1
+    memory:
+  barcodes_positions_new_ref:
+    threads: 1
+    memory:
+  chromosome_arms:
+    threads: 1
+    memory:
+  report_html:
+    threads: 1
+    memory: 1000
