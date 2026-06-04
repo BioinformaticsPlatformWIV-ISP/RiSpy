@@ -76,6 +76,35 @@ otherwise the workflow will not be able to run them.
 
 ---
 
+### Environment & Dependency Validation
+To ensure that your environment is correctly configured and that all required dependencies are available, we provide minimal Illumina and ONT test datasets.
+
+### Illumina Validation Test
+Run the following command to validate the Illumina workflow:
+```markdown
+fingerprint Illumina-complete-run \
+  --reference test_data/test_reference.fasta \
+  --barcodes test_data/test_barcodes.tsv \
+  --ref-vcf test_data/test.vcf \
+  --output-dir /output_dir \
+  --fastq-dir test_data/Illumina_fastq \
+  --threads 8 \
+  --mem-mb 16000
+```
+
+### ONT Validation Test
+Run the following command to validate the ONT workflow:
+```markdown
+fingerprint ONT-complete-run \
+  --reference test_data/test_reference.fasta \
+  --barcodes test_data/test_barcodes.tsv \
+  --ref-vcf test_data/test.vcf \
+  --output-dir /output_dir \
+  --fastq-dir test_data/ONT_fastq \
+  --threads 8 \
+  --mem-mb 16000
+```
+
 ## Command-Line Parameters
 
 The `fingerprint` workflow provides multiple subcommands.  
