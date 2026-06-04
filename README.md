@@ -23,7 +23,7 @@ Fingerprint
 You can install the workflow directly from the repository:
 
 ```bash
-pip install git+https://to_be_added.git
+pip install git+https://github.com/BioinformaticsPlatformWIV-ISP/RiSpy.git
 ````
 
 or, if you have cloned the repo locally:
