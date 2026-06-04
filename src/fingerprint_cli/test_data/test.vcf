@@ -1,0 +1,37 @@
+##fileformat=VCFv4.2
+##FILTER=<ID=PASS,Description="All filters passed">
+##FILTER=<ID=RefCall,Description="Genotyping model thinks this site is reference.">
+##FILTER=<ID=LowQual,Description="Confidence in this variant being real is below calling threshold.">
+##FILTER=<ID=NoCall,Description="Site has depth=0 resulting in no call.">
+##INFO=<ID=END,Number=1,Type=Integer,Description="End position (for use with symbolic alleles)">
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
+##FORMAT=<ID=GQ,Number=1,Type=Integer,Description="Conditional genotype quality">
+##FORMAT=<ID=DP,Number=1,Type=Integer,Description="Read depth">
+##FORMAT=<ID=MIN_DP,Number=1,Type=Integer,Description="Minimum DP observed within the GVCF block.">
+##FORMAT=<ID=AD,Number=R,Type=Integer,Description="Read depth for each allele">
+##FORMAT=<ID=VAF,Number=A,Type=Float,Description="Variant allele fractions.">
+##FORMAT=<ID=PL,Number=G,Type=Integer,Description="Phred-scaled genotype likelihoods rounded to the closest integer">
+##FORMAT=<ID=MED_DP,Number=1,Type=Integer,Description="Median DP observed within the GVCF block rounded to the nearest integer.">
+##FORMAT=<ID=MID,Number=1,Type=String,Description="Identifies which model called this variant.">
+##DeepVariant_version=1.8.0
+##contig=<ID=NC_089035.1,length=227415>
+##contig=<ID=NC_089036.1,length=188684>
+##contig=<ID=NC_089037.1,length=193612>
+##contig=<ID=NC_089038.1,length=186772>
+##contig=<ID=NC_089039.1,length=157379>
+##contig=<ID=NC_089040.1,length=166291>
+##contig=<ID=NC_089041.1,length=154975>
+##contig=<ID=NC_089042.1,length=148085>
+##contig=<ID=NC_089043.1,length=142232>
+##contig=<ID=NC_089044.1,length=123890>
+##contig=<ID=NC_089045.1,length=161058>
+##contig=<ID=NC_089046.1,length=146356>
+##contig=<ID=NC_011033.1,length=2539>
+##contig=<ID=NC_001320.1,length=696>
+##contig=<ID=NC_001751.1,length=11>
+##bcftools_filterVersion=1.21+htslib-1.21
+##bcftools_filterCommand=filter -i 'QUAL>=20 & FORMAT/DP>=5' -o /scratch/amzolfaghari/Bert_Code_review/test/test_data/Illumina/test/deep_variant/Filtering/filtered_variants.vcf.gz -O z --write-index=tbi /scratch/amzolfaghari/Bert_Code_review/test/test_data/Illumina/test/deep_variant/variants.vcf; Date=Thu Jun  4 09:58:44 2026
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	default
+NC_089035.1	33320	.	T	G	30.7	PASS	.	GT:GQ:DP:AD:VAF:MID:PL	1/1:28:12:0,12:1:small_model:30,30,0
+NC_089035.1	49470	.	T	A	23.4	PASS	.	GT:GQ:DP:AD:VAF:PL	1/1:14:6:0,6:1:23,14,0
+
