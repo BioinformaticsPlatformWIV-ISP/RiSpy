@@ -396,5 +396,6 @@ All commands support:
 ```bash
 fingerprint <command> --help
 ```
+
 ## Citation
-If you use this tool, please consider citing our [publication](https://doi-org.vdic.idm.oclc.org/10.1093/bib/bbag406).
+If you use this tool, please consider citing our [publication](https://doi.org/10.1093/bib/bbag406).
